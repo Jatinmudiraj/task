@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "896952882243",
+    "project_id": "project7-f1376",
+    "storage_bucket": "project7-f1376.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896952882243:android:a507da69a23e4655bf70f6",
+        "android_client_info": {
+          "package_name": "com.kingsofpearl.project7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896952882243-dua188g266gc268nbil93cqhdcbe0pk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyk4TKh3oMT21OlrjFm4l7Z5kzNMpo6dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896952882243-dua188g266gc268nbil93cqhdcbe0pk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

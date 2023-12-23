@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:project7/pages/audio_list_page.dart';
 import 'package:project7/pages/create_gig.dart';
+import 'package:project7/pages/flicker_page.dart';
 // import 'package:project4/pages/Profile.dart';
 // import 'package:project4/pages/SearchWorking.dart';
 // import 'package:project4/pages/Search_Page.dart';
@@ -10,6 +12,7 @@ import 'package:project7/pages/forget_passwor.dart';
 // import 'package:project4/pages/history.dart';
 import 'package:project7/pages/home.dart';
 import 'package:project7/pages/login_screen.dart';
+import 'package:project7/pages/search.dart';
 // import 'package:project7/pages/maze_page.dart';
 import 'package:project7/pages/signup_screen.dart';
 import 'package:project7/pages/todayScreen.dart';
@@ -27,10 +30,10 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedindex = 0;
 
-  static const List<Widget> _screens = <Widget>[
+  static final List<Widget> _screens = <Widget>[
     Home(),
-    WelcomeScreen(),
-    CreateGig(),
+    SearchPage(),
+    Flicker(),
     SignUpScreen(),
     // Search(),
     // Functional(),

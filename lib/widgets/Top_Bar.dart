@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:project7/pages/flicker_page.dart';
 import 'package:project7/pages/home.dart';
+import 'package:project7/pages/search.dart';
 // import 'package:project4/pages/Profile.dart';
 // import 'package:project4/pages/Search_Page.dart';
 // import 'package:project4/pages/create_gig.dart';
@@ -56,32 +58,32 @@ class _NavBarState extends State<NavBar> {
             );
           },
         ),
-        // ListTile(
-        //   leading: Icon(Icons.people),
-        //   title: Text('Promote Yourself'),
-        //   onTap: () {
-        //     Navigator.push(
-        //       context,
-        //       MaterialPageRoute(
-        //         builder: (context) => CreateGig(),
-        //       ),
-        //     );
-        //   },
-        // ),
-        // ListTile(
-        //     leading: Icon(Icons.share), title: Text('Refer'), onTap: () {}),
-        // ListTile(
-        //   leading: Icon(Icons.checklist_rtl_rounded),
-        //   title: Text('Attandance'),
-        //   onTap: () {
-        //     Navigator.push(
-        //       context,
-        //       MaterialPageRoute(
-        //         builder: (context) => TodaySceen(),
-        //       ),
-        //     );
-        //   },
-        // ),
+        ListTile(
+          leading: Icon(Icons.functions_outlined),
+          title: Text('Flicker Page with Paging'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => Flicker(),
+              ),
+            );
+          },
+        ),
+        ListTile(
+            leading: Icon(Icons.share), title: Text('Refer'), onTap: () {}),
+        ListTile(
+          leading: Icon(Icons.search_outlined),
+          title: Text('Search'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SearchPage(),
+              ),
+            );
+          },
+        ),
         // ListTile(
         //   leading: Icon(Icons.safety_check_outlined),
         //   title: Text('Attandance History'),

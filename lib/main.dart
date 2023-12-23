@@ -36,7 +36,7 @@ import 'package:project7/pages/welcome_screen.dart';
 void main() async {
    WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 

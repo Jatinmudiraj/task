@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "896952882243",
+    "firebase_url": "https://project7-f1376-default-rtdb.firebaseio.com",
     "project_id": "project7-f1376",
     "storage_bucket": "project7-f1376.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "896952882243-3c2b43iaqn6sam42rh53cch7vq46dsrv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingsofpearl.project7",
+            "certificate_hash": "0fb0ecd429245e96c806aed9dc4846f01eb67440"
+          }
+        },
         {
           "client_id": "896952882243-dua188g266gc268nbil93cqhdcbe0pk9.apps.googleusercontent.com",
           "client_type": 3

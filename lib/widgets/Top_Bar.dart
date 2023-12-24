@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:project7/pages/flicker_page.dart';
 import 'package:project7/pages/home.dart';
 import 'package:project7/pages/search.dart';
+import 'package:project7/pages/todo.dart';
 // import 'package:project4/pages/Profile.dart';
 // import 'package:project4/pages/Search_Page.dart';
 // import 'package:project4/pages/create_gig.dart';
@@ -84,18 +85,18 @@ class _NavBarState extends State<NavBar> {
             );
           },
         ),
-        // ListTile(
-        //   leading: Icon(Icons.safety_check_outlined),
-        //   title: Text('Attandance History'),
-        //   onTap: () {
-        //     Navigator.push(
-        //       context,
-        //       MaterialPageRoute(
-        //         builder: (context) => MyWidget(),
-        //       ),
-        //     );
-        //   },
-        // ),
+        ListTile(
+          leading: Icon(Icons.today_outlined),
+          title: Text('To Do App'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ToDoList(),
+              ),
+            );
+          },
+        ),
         // Divider(),
         // ListTile(
         //   leading: Icon(Icons.settings),

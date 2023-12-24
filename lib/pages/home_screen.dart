@@ -16,6 +16,7 @@ import 'package:project7/pages/search.dart';
 // import 'package:project7/pages/maze_page.dart';
 import 'package:project7/pages/signup_screen.dart';
 import 'package:project7/pages/todayScreen.dart';
+import 'package:project7/pages/todo.dart';
 // import 'package:project4/pages/todayScreen.dart';
 import 'package:project7/pages/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Home(),
     SearchPage(),
     Flicker(),
-    SignUpScreen(),
+    ToDoList(),
     // Search(),
     // Functional(),
     // Profile(),

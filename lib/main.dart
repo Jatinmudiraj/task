@@ -3,12 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 // import 'package:google_fonts/google_fonts.dart';
 import 'package:project7/pages/home_screen.dart';
+import 'package:project7/pages/todo.dart';
 // import 'package:trial/pages/login_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:project7/utils/gallery_view_model.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:project7/pages/welcome_screen.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+
 
 
 // void main() {
@@ -32,12 +36,68 @@ import 'package:project7/pages/welcome_screen.dart';
 //   }
 // }
 
+final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+    FlutterLocalNotificationsPlugin();
 
-void main() async {
-   WidgetsFlutterBinding.ensureInitialized();
+
+
+  Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+
+  final InitializationSettings initializationSettings = InitializationSettings(
+    android: AndroidInitializationSettings('@mipmap/ic_launcher'),
+    
+  );
+
+  await flutterLocalNotificationsPlugin.initialize(
+    initializationSettings,
+    // onSelectNotification: (String? payload) async {
+    //   // Handle notification tap
+    // },
+  );
+
   runApp(MyApp());
 }
+
+
+
+
+
+
+
+// void main() async {
+//    WidgetsFlutterBinding.ensureInitialized();
+//   await Firebase.initializeApp();
+//    await initNotifications();
+//   runApp(MyApp());
+// }
+
+
+
+
+
+
+
+
+
+
+
+// void main() async {
+  // WidgetsFlutterBinding.ensureInitialized();
+  // Add these lines
+  
+  // runApp(MyApp());
+// }
+
+Future<void> initNotifications() async {
+  const AndroidInitializationSettings initializationSettingsAndroid =
+      AndroidInitializationSettings('@mipmap/ic_launcher');
+  final InitializationSettings initializationSettings =
+      InitializationSettings(android: initializationSettingsAndroid);
+  await FlutterLocalNotificationsPlugin().initialize(initializationSettings);
+}
+
 
 
 class FlickrPhoto {

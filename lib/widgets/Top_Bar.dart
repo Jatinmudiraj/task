@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:project7/pages/fetchvechicle.dart';
 import 'package:project7/pages/flicker_page.dart';
 import 'package:project7/pages/home.dart';
 import 'package:project7/pages/search.dart';
@@ -47,6 +48,18 @@ class _NavBarState extends State<NavBar> {
             ),
           ),
         ),
+        // ListTile(
+        //   leading: Icon(Icons.home_outlined),
+        //   title: Text('Home'),
+        //   onTap: () {
+        //     Navigator.push(
+        //       context,
+        //       MaterialPageRoute(
+        //         builder: (context) => Home(),
+        //       ),
+        //     );
+        //   },
+        // ),
         ListTile(
           leading: Icon(Icons.home_outlined),
           title: Text('Home'),
@@ -54,7 +67,7 @@ class _NavBarState extends State<NavBar> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Home(),
+                builder: (context) => VehicleDetailsPage(),
               ),
             );
           },
@@ -98,18 +111,18 @@ class _NavBarState extends State<NavBar> {
           },
         ),
         // Divider(),
-        // ListTile(
-        //   leading: Icon(Icons.settings),
-        //   title: Text('Settings'),
-        //   onTap: () {
-        //     Navigator.push(
-        //       context,
-        //       MaterialPageRoute(
-        //         builder: (context) => Profile(),
-        //       ),
-        //     );
-        //   },
-        // ),
+        ListTile(
+          leading: Icon(Icons.car_rental_outlined),
+          title: Text('Vehicle Details'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => VehicleDetailsPage(),
+              ),
+            );
+          },
+        ),
         ListTile(
           leading: Icon(Icons.exit_to_app),
           title: Text('Exit'),

@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:project7/pages/audio_list_page.dart';
 import 'package:project7/pages/create_gig.dart';
+import 'package:project7/pages/fetchvechicle.dart';
 import 'package:project7/pages/flicker_page.dart';
 // import 'package:project4/pages/Profile.dart';
 // import 'package:project4/pages/SearchWorking.dart';
@@ -17,6 +18,11 @@ import 'package:project7/pages/search.dart';
 import 'package:project7/pages/signup_screen.dart';
 import 'package:project7/pages/todayScreen.dart';
 import 'package:project7/pages/todo.dart';
+import 'package:project7/pages/uploadvehicle.dart';
+import 'package:project7/pages/wa.dart';
+import 'package:project7/pages/wamain.dart';
+import 'package:project7/pages/wasingle.dart';
+import 'package:project7/pages/wauser.dart';
 // import 'package:project4/pages/todayScreen.dart';
 import 'package:project7/pages/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -32,10 +38,13 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedindex = 0;
 
   static final List<Widget> _screens = <Widget>[
-    Home(),
+    VehicleDetailsPage(),
+    VehicleForm(),
     SearchPage(),
-    Flicker(),
-    ToDoList(),
+    WAMain(),
+    // UserProfilePage(),
+    // UserListPage(),
+    // ChatScreen(),
     // Search(),
     // Functional(),
     // Profile(),
@@ -69,12 +78,12 @@ class _HomeScreenState extends State<HomeScreen> {
               label: 'Home'),
           BottomNavigationBarItem(
               backgroundColor: Colors.blue,
-              icon: Icon(Icons.search),
-              label: 'Search'),
-          BottomNavigationBarItem(
-              backgroundColor: Colors.blue,
               icon: Icon(Icons.add_circle),
               label: 'Functional'),
+          BottomNavigationBarItem(
+              backgroundColor: Colors.blue,
+              icon: Icon(Icons.search),
+              label: 'Search'),
           BottomNavigationBarItem(
               backgroundColor: Colors.blue,
               icon: Icon(Icons.person),
